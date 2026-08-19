@@ -2,7 +2,7 @@ import React from 'react';
 import { View, ScrollView } from 'react-native';
 import Titulo from '../Titulo';
 import ItemLista from '../ItemLista';
-import estilo from '../estilo.js';
+import estilo from './estilo.js';
 
 export default function ListaDeSignos() {
   return (
