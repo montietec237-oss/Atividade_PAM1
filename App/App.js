@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import ListaDeArcanos from './components/ListadeArcano/index.js';
+import ListaDeArcanosAuto from './components/ListadeArcanoAuto/index.js';
 export default function App() {
-  return (
+  return (  
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <ListaDeArcanosAuto />
+    </View> 
+    // Escolha qual componente você quer renderizar, ListaDeArcanos ou ListaDeArcanosAuto
+    // É só comentar o que não quer usar e descomentar o que quer usa
+    // <ListaDeArcanosAuto />
+    // <ListaDeArcanos />
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
